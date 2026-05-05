@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #8b5cf6; /* violet-500 */
+  --color-brand-secondary: #6366f1; /* indigo-500 */
+  --color-brand-accent: #f472b6; /* pink-400 */
+  
+  --color-surface-light: #f8fafc;
+  --color-surface-dark: #020617;
+  --color-surface-muted: #1e293b;
+  
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    @apply antialiased text-slate-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply tracking-tight font-bold;
+  }
+  
+  body {
+    @apply bg-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary;
+  }
+  
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-xl border border-white/20 shadow-2xl shadow-slate-200/50;
+  }
+  
+  .dark-glass-card {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-slate-800 shadow-2xl;
+  }
+
+  .bento-inner {
+    @apply absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none;
+  }
+  
+  .section-padding {
+    @apply py-16 sm:py-24 lg:py-44;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
