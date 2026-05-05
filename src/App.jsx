@@ -7,6 +7,8 @@ import { motion, AnimatePresence, useScroll, useTransform, useSpring, useMotionV
 import { GridPattern } from './components/ui/grid-pattern';
 import { WaveText } from './components/ui/wave-text';
 import { cn } from './lib/utils';
+
+gsap.registerPlugin(ScrollTrigger);
 import {
   ArrowUpRight,
   BarChart,
@@ -129,7 +131,6 @@ export default function App() {
 
   useEffect(() => {
     // --- GSAP Setup ---
-    gsap.registerPlugin(ScrollTrigger);
 
     // --- Lenis Smooth Scroll ---
     const lenis = new Lenis({
@@ -211,7 +212,7 @@ export default function App() {
             start: 'top 90%',
             toggleActions: 'play none none none'
           },
-          filter: 'none',
+          filter: mobile ? 'none' : 'blur(0px)',
           opacity: 1,
           y: 0,
           duration: mobile ? 0.8 : 1.5,
@@ -245,7 +246,7 @@ export default function App() {
           <div className={`flex justify-between items-center px-6 py-3 rounded-full transition-all duration-500 ${isScrolled ? 'bg-white/70 backdrop-blur-xl border border-slate-200/50 shadow-lg shadow-slate-200/20' : 'bg-transparent'}`}>
             <div className="flex items-center gap-3">
               <img src="/logo_v2.png" alt="Biz Nation" className="h-8 w-auto" />
-              <span className="font-heading font-extrabold text-xl tracking-tighter text-slate-900 uppercase">BIZ NATION</span>
+              <span className="font-heading font-extrabold text-xl tracking-tight text-slate-900 uppercase">BIZ NATION</span>
             </div>
 
             <div className="hidden md:flex items-center gap-10">
