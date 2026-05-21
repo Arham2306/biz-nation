@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { useModal } from '../../context/ModalContext';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +14,7 @@ export default function Layout({ children }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { pathname } = useLocation();
+  const { openLeadModal } = useModal();
 
   // --- Custom Cursor ---
   const mouseX = useMotionValue(-100);
@@ -154,7 +156,10 @@ export default function Layout({ children }) {
                   {item}
                 </a>
               ))}
-              <button className={`${pathname === '/' ? 'bg-slate-950 text-white' : 'bg-white text-slate-950'} px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-brand-primary hover:text-white transition-all shadow-lg hover:shadow-brand-primary/20 transform hover:-translate-y-0.5 active:scale-95`}>
+              <button 
+                onClick={openLeadModal}
+                className={`${pathname === '/' ? 'bg-slate-950 text-white' : 'bg-white text-slate-950'} px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-brand-primary hover:text-white transition-all shadow-lg hover:shadow-brand-primary/20 transform hover:-translate-y-0.5 active:scale-95`}
+              >
                 Strategy Call
               </button>
             </div>
@@ -184,7 +189,13 @@ export default function Layout({ children }) {
                   {item}
                 </a>
               ))}
-              <button className="bg-brand-primary text-white py-6 rounded-3xl font-black text-xl uppercase tracking-tighter shadow-2xl shadow-brand-primary/30">
+              <button 
+                onClick={() => {
+                  openLeadModal();
+                  setIsMobileMenuOpen(false);
+                }}
+                className="w-full bg-brand-primary text-white py-6 rounded-3xl font-black text-xl uppercase tracking-tighter shadow-2xl shadow-brand-primary/30"
+              >
                 Get Strategy Call
               </button>
             </div>

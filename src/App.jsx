@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Layout from './components/layout/Layout';
+import { ModalProvider } from './context/ModalContext';
+import { LeadModal } from './components/ui/LeadModal';
 
 // Page transition wrapper
 const PageWrapper = ({ children }) => {
@@ -25,15 +27,18 @@ const PageWrapper = ({ children }) => {
 
 export default function App() {
   return (
-    <Router>
-      <Layout>
-        <PageWrapper>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-          </Routes>
-        </PageWrapper>
-      </Layout>
-    </Router>
+    <ModalProvider>
+      <Router>
+        <Layout>
+          <PageWrapper>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+            </Routes>
+          </PageWrapper>
+        </Layout>
+        <LeadModal />
+      </Router>
+    </ModalProvider>
   );
 }
