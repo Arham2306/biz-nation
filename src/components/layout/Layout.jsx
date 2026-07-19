@@ -141,9 +141,9 @@ export default function Layout({ children }) {
               : 'bg-transparent'
           }`}>
             <Link to="/" className="flex items-center gap-3">
-              <img src="/BizNation-Main-logo.png" alt="Biz Nation" className="h-8 w-auto" />
+              <img src="/Asber-Consultants-logo.png" alt="Asber Consultants" className="h-8 w-auto" />
               <span className={`font-heading font-extrabold text-xl tracking-tight uppercase transition-colors duration-500 ${pathname === '/' ? 'text-slate-900' : 'text-white'}`}>
-                BIZ NATION
+                ASBER CONSULTANTS
               </span>
             </Link>
 
@@ -210,8 +210,8 @@ export default function Layout({ children }) {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
           <div className="flex flex-col gap-8 max-w-xs">
             <div className="flex items-center gap-3">
-              <img src="/BizNation-Main-logo.png" alt="Biz Nation" className="h-8 w-auto" />
-              <span className="font-heading font-black text-2xl tracking-tighter text-slate-900 uppercase">BIZ NATION</span>
+              <img src="/Asber-Consultants-logo.png" alt="Asber Consultants" className="h-8 w-auto" />
+              <span className="font-heading font-black text-2xl tracking-tighter text-slate-900 uppercase">ASBER CONSULTANTS</span>
             </div>
             <p className="text-sm text-slate-400 font-bold leading-relaxed uppercase tracking-tighter">
               The world's most results-obsessed growth agency. Engineering predictable outcomes for ambitious brands.
@@ -250,7 +250,7 @@ export default function Layout({ children }) {
 
         <div className="max-w-7xl mx-auto mt-20 pt-10 border-t border-slate-50 flex flex-col sm:flex-row justify-between items-center gap-6">
           <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.4em]">
-            © 2026 Biz Nation LLC. ALL RIGHTS RESERVED.
+            © 2026 Asber Consultants LLC. ALL RIGHTS RESERVED.
           </p>
         </div>
       </footer>

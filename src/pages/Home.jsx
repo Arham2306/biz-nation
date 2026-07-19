@@ -90,9 +90,9 @@ const services = [
 // I'll fix the imports in the actual write.
 
 const testimonialsRow1 = [
-  { q: "Biz Nation completely transformed how we generate leads. Within 60 days, our pipeline went from almost empty to overflowing with qualified prospects.", a: "Sarah M.", r: "CEO, TechVenture Group" },
+  { q: "Asber Consultants completely transformed how we generate leads. Within 60 days, our pipeline went from almost empty to overflowing with qualified prospects.", a: "Sarah M.", r: "CEO, TechVenture Group" },
   { q: "The AI automation they built is like having 5 extra employees. It's been a game changer for us.", a: "Marcus V.", r: "Founder, Zenith" },
-  { q: "Professional, responsive, and results-obsessed. Biz Nation is the agency we wish we had found years ago.", a: "Nadia K.", r: "Founder, Bloom Wellness" },
+  { q: "Professional, responsive, and results-obsessed. Asber Consultants is the agency we wish we had found years ago.", a: "Nadia K.", r: "Founder, Bloom Wellness" },
   { q: "Their lead gen system is pure fire. We've seen a 400% increase in qualified inquiries.", a: "David K.", r: "VP Sales, CloudScale" }
 ];
 
@@ -100,7 +100,7 @@ const testimonialsRow2 = [
   { q: "The branding they did for us captures exactly who we are. Our conversion rates are up 40%.", a: "Elena P.", r: "Director, Solara" },
   { q: "The AI call agent they set up for us handles 300+ inquiries a week. We've freed up our entire sales team to close instead of chase.", a: "James R.", r: "Director, Premier Realty Co." },
   { q: "The transition to AI-powered sales was seamless. Our team is now 3x more productive.", a: "Liam O.", r: "CEO, Streamline" },
-  { q: "Biz Nation is the growth partner every ambitious brand needs in 2026.", a: "Sofia T.", r: "COO, Horizon" }
+  { q: "Asber Consultants is the growth partner every ambitious brand needs in 2026.", a: "Sofia T.", r: "COO, Horizon" }
 ];
 
 export default function Home() {
@@ -144,7 +144,7 @@ export default function Home() {
               </motion.h1>
               
               <motion.p variants={fadeIn} className="text-lg lg:text-xl text-slate-500 mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                Biz Nation LLC helps ambitious businesses dominate their market with cutting-edge digital marketing, AI-powered automation, and precision lead generation — all under one roof.
+                Asber Consultants LLC helps ambitious businesses dominate their market with cutting-edge digital marketing, AI-powered automation, and precision lead generation — all under one roof.
               </motion.p>
               
               <motion.div variants={fadeIn} className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start">
@@ -233,7 +233,7 @@ export default function Home() {
                 <WaveText text=" Outcomes." />
               </h2>
               <p className="text-xl text-slate-500 leading-relaxed mb-10 font-medium">
-                At Biz Nation LLC, we believe every business — whether a scrappy startup or a scaling enterprise — deserves the tools, strategy, and execution power of a world-class growth team. We listen, we understand, and we build solutions that convert real audiences into real revenue.
+                At Asber Consultants LLC, we believe every business — whether a scrappy startup or a scaling enterprise — deserves the tools, strategy, and execution power of a world-class growth team. We listen, we understand, and we build solutions that convert real audiences into real revenue.
               </p>
               <div className="flex items-center gap-6 p-6 rounded-3xl bg-slate-50 border border-slate-100 inline-flex">
                 <div className="flex -space-x-3">
@@ -295,7 +295,7 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="mb-20 text-center lg:text-left">
-            <span className="text-brand-primary font-black tracking-[0.5em] uppercase text-[10px] mb-6 block">Why Biz Nation</span>
+            <span className="text-brand-primary font-black tracking-[0.5em] uppercase text-[10px] mb-6 block">Why Asber Consultants</span>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-black text-white tracking-tighter leading-[1] uppercase">
               <WaveText text="The Growth" /><br />
               <WaveText text="Edge You Need." className="text-brand-primary" />

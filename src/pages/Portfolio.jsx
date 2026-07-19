@@ -108,7 +108,7 @@ export default function Portfolio() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="text-brand-primary font-black tracking-[0.5em] uppercase text-[10px] mb-4 sm:mb-8 block">Biz Nation Archive</span>
+          <span className="text-brand-primary font-black tracking-[0.5em] uppercase text-[10px] mb-4 sm:mb-8 block">Asber Consultants Archive</span>
           <h1 className="text-4xl sm:text-7xl lg:text-9xl font-heading font-black text-white tracking-tighter leading-[0.9] uppercase mb-8 sm:mb-12">
             <WaveText text="The Result" /><br />
             <WaveText text="Engine." className="text-gradient" />
@@ -157,7 +157,7 @@ export default function Portfolio() {
             {[1, 2, 3, 4, 5, 6].map(i => (
               <div key={i} className="flex items-center gap-8">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center p-2 sm:p-3 grayscale hover:grayscale-0 transition-all">
-                   <img src="/BizNation-Main-logo.png" alt="Client" className="w-full opacity-50" />
+                   <img src="/Asber-Consultants-logo.png" alt="Client" className="w-full opacity-50" />
                 </div>
                 <span className="text-2xl sm:text-4xl font-black text-white/20 uppercase tracking-tighter hover:text-white transition-colors duration-500">CLIENT_PARTNER_{i}</span>
               </div>
@@ -166,7 +166,7 @@ export default function Portfolio() {
             {[1, 2, 3, 4, 5, 6].map(i => (
               <div key={`dup-${i}`} className="flex items-center gap-8">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center p-2 sm:p-3 grayscale hover:grayscale-0 transition-all">
-                   <img src="/BizNation-Main-logo.png" alt="Client" className="w-full opacity-50" />
+                   <img src="/Asber-Consultants-logo.png" alt="Client" className="w-full opacity-50" />
                 </div>
                 <span className="text-2xl sm:text-4xl font-black text-white/20 uppercase tracking-tighter hover:text-white transition-colors duration-500">CLIENT_PARTNER_{i}</span>
               </div>
